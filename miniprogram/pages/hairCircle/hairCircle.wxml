@@ -1,0 +1,45 @@
+<button open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">我要发圈</button>
+<!-- 搜索条 -->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" />   
+
+
+<view wx:for="{{detail}}" wx:key="{{index}}" wx:for-item="detail">
+  <view class="bc_2">
+    <view>
+      <image class="img image" src="{{detail.userHearImg}}"></image>
+      <!-- <text>{{detail.userName}}</text> -->
+      <div id="u4" class="ax_default _三级标题">
+        <div id="u4_div" class=""></div>
+        <!-- Unnamed () -->
+        <div id="u5" class="text" style="visibility: visible;">
+          <p><span style="font-family:'Arial Negreta', 'Arial';font-weight:700;">{{detail.userName}}</span></p>
+        </div>
+      </div>
+      <view>
+        <text>{{detail.content}}</text>
+        <view style="display:flex; flex-direction:row;justify-content:space-around;">
+          <view wx:for="{{detail.fileIds}}" wx:key="{{index}}"wx:for-item="imgSrc" class="imgs">
+             <image src="{{imgSrc}}" data-srcs="{{detail.fileIds}}"
+                    data-current="{{imgSrc}}"
+                    bindtap="previewImage" class='img'></image>
+          </view>    
+        </view>
+      </view>
+    </view>
+    <view style="display:flex; flex-direction:row;justify-content:space-around;">
+      <button bindtap='saveImages' class='flex_item green' data-imgs='{{detail.fileIds}}'>一键保存</button>
+      <button bindtap="copyDetails" class='flex_item red' data-content="{{detail.content}}">一键复制</button>
+      <button data-id="shareBtn" open-type="share" class='flex_item blue'>一键分享</button>
+      <view class="xline"></view>
+      <van-divider dashed />
+    </view>
+  </view>
+</view>
+ 
+     <div id="u6" class="ax_default image">
+        <img id="u6_img" class="img " src="images/page1/u6.png"/>
+        <!-- Unnamed () -->
+        <div id="u7" class="text" style="display: none; visibility: hidden">
+          <p><span></span></p>
+        </div>
+      </div>

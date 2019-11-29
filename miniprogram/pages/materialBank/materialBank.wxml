@@ -1,0 +1,34 @@
+<view class='row comment-list'>
+      <view class='col-2 comment-left'>
+        <image class='img-responsive radius-circle border-basic' mode='widthFix' src='../../images/avatar.jpg'></image>
+      </view>
+      <view class='col-10 comment-right'>
+        <view class='row comment-info'>
+          <view class='col font-lv2 color-semi'>天空</view>          
+          <view class='col'>
+            <view class='pull-right font-lv4 color-grey'>1小时前</view>
+          </view>
+        </view>
+        <view class='row comment-content color-grey font-lv3 mgt-15rpx'>
+          感谢分享。
+        </view>
+      </view>
+    </view>
+ 
+    <view class='row comment-list'>
+      <view class='col-2 comment-left'>
+        <image class='img-responsive radius-circle border-basic' mode='widthFix' src='../../images/avatar.jpg'></image>
+      </view>
+      <view class='col-10 comment-right'>
+        <view class='row comment-info'>
+          <view class='col font-lv2 color-semi'>大地</view>          
+          <view class='col'>
+            <view class='pull-right font-lv4 color-grey'>2小时前</view>
+          </view>
+        </view>
+        <view class='row comment-content color-grey font-lv3 mgt-15rpx'>
+          楼主好人。
+        </view>
+      </view>
+    </view> 
+ 

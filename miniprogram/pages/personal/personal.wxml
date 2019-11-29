@@ -1,0 +1,25 @@
+<view class='base-padding row'>
+  <view class='user'>
+    <image src='../../images/avatar.jpg'></image>
+    <view class='username'>昵称</view>
+    <view class='color-grey font-lv3'>如果你浪费了自己的年龄，那是挺可悲的。因为你的青春只能持续一点儿时间——很短的一点儿时间。</view>
+  </view>
+</view>
+ 
+<view class='base-padding row base-info'>
+  <navigator url='/pages/release/release' class='col-12'>
+    <image src='../../images/book.png'></image>
+    我的发布
+    <image class='pull-right' src='../../images/right-angle.png'></image>
+  </navigator>
+  <navigator url='/pages/release/release' class='col-12'>
+    <image src='../../images/star.png'></image>
+    我的收藏
+    <image class='pull-right' src='../../images/right-angle.png'></image>
+  </navigator>  
+  <navigator url='/pages/release/release' class='col-12'>
+    <image src='../../images/follow.png'></image>
+    我的关注
+    <image class='pull-right' src='../../images/right-angle.png'></image>
+  </navigator>
+</view>

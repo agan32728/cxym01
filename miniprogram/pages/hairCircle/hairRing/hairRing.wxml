@@ -1,0 +1,13 @@
+<view class="img-box">
+  <!-- 发圈功能 -->
+      <van-field class="text" value="{{ content }}" placeholder="发表你的内容" border="{{ false }}"
+      bind:change="onContentChange"/>
+      <view class="img" wx:for="{{imgs}}" wx:for-item="item" wx:key="*this">
+       
+          <image src="{{item}}" data-index="{{index}}" mode="aspectFill" bindtap="previewImg"></image>
+          <view class="delete-btn" data-index="{{index}}" catchtap="deleteImg">删除</view>
+      </view>
+      <view class="upload-img-btn" bindtap="chooseImg" wx:if="{{imgs.length<9}}">上传</view>
+      <van-button bindtap="submit" open-type="getUserInfo" bindgetuserinfo="onGotUserInfo">发布</van-button>
+ 
+</view>
